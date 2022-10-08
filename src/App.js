@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Button } from 'antd';
+import ClaimAllRequest from './utils/claim/ClaimAllRewards';
 // 引入样式
 import 'antd/dist/antd.css';
 
@@ -27,7 +28,7 @@ function App() {
 
 // claim当前账户的奖励，先支持 atom, osmo, scrt, juno, evmos
 function claimAll() {
-  console.log("claimAll");
+  new ClaimAllRequest().claimAll();
 }
 
 // 将当前账户的所有资产发送到指定地址，先支持 atom, osmo, scrt, juno, evmos
