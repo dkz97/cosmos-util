@@ -167,8 +167,8 @@ export const chainsList = [
             coinDecimals: 6,
         }],
         feeCurrencies: [{
-            coinDenom: "OSMO",
-            coinMinimalDenom: "uosmo",
+            coinDenom: "JUNO",
+            coinMinimalDenom: "ujuno",
             coinDecimals: 6
         }],
         gasPrice: "0.0025ujuno",
