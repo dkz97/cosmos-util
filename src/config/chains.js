@@ -78,7 +78,7 @@ export const chainsList = [
         rpc: 'https://rpc.cosmos.directory/cosmoshub',
         rest: 'https://rest.cosmos.directory/cosmoshub',
         stakeCurrency: {
-            coinDenom: "ATOM", 
+            coinDenom: "ATOM",
             coinMinimalDenom: "uatom",
             coinDecimals: 6
         },
@@ -94,19 +94,153 @@ export const chainsList = [
             bech32PrefixConsPub: "atomvalconspub"
         },
         currencies: [{
-            coinDenom: "ATOM", 
+            coinDenom: "ATOM",
             coinMinimalDenom: "uatom",
             coinDecimals: 6
         }],
         feeCurrencies: [{
-            coinDenom: "ATOM", 
+            coinDenom: "ATOM",
             coinMinimalDenom: "uatom",
             coinDecimals: 6
         }],
-        gasPriceStep: {
-             low: 0.01,
-             average: 0.025,
-             high: 0.04
-        }
+        gasPrice: "0.0025uatom",
+        claim_min: 0.1
+    },
+    {
+        chainId: "osmosis-1",
+        chainName: "Osmosis mainnet",
+        rpc: "https://rpc.cosmos.directory/osmosis",
+        rest: "https://rest.cosmos.directory/osmosis",
+        stakeCurrency: {
+            coinDenom: "OSMO",
+            coinMinimalDenom: "uosmo",
+            coinDecimals: 6,
+        },
+        bip44: {
+            coinType: 118,
+        },
+        bech32Config: {
+            bech32PrefixAccAddr: "osmo",
+            bech32PrefixAccPub: "osmopub",
+            bech32PrefixValAddr: "osmovaloper",
+            bech32PrefixValPub: "osmovaloperpub",
+            bech32PrefixConsAddr: "osmovalcons",
+            bech32PrefixConsPub: "osmovalconspub"
+        },
+        currencies: [{
+            coinDenom: "OSMO",
+            coinMinimalDenom: "uosmo",
+            coinDecimals: 6
+        }],
+        feeCurrencies: [{
+            coinDenom: "OSMO",
+            coinMinimalDenom: "uosmo",
+            coinDecimals: 6
+        }],
+        gasPrice: "0.0025uosmo",
+        claim_min: 0.1
+    },
+    {
+        chainId: "juno-1",
+        chainName: "Juno mainnet",
+        rpc: 'https://rpc.cosmos.directory/juno',
+        rest: 'https://rest.cosmos.directory/juno',
+        stakeCurrency: {
+            coinDenom: "JUNO",
+            coinMinimalDenom: "ujuno",
+            coinDecimals: 6,
+        },
+        bip44: {
+            coinType: 118,
+        },
+        bech32Config: {
+            bech32PrefixAccAddr: "juno",
+            bech32PrefixAccPub: "junopub",
+            bech32PrefixValAddr: "junovaloper",
+            bech32PrefixValPub: "junovaloperpub",
+            bech32PrefixConsAddr: "junovalcons",
+            bech32PrefixConsPub: "junovalconspub"
+        },
+        currencies: [{
+            coinDenom: "JUNO",
+            coinMinimalDenom: "ujuno",
+            coinDecimals: 6,
+        }],
+        feeCurrencies: [{
+            coinDenom: "OSMO",
+            coinMinimalDenom: "uosmo",
+            coinDecimals: 6
+        }],
+        gasPrice: "0.0025ujuno",
+        claim_min: 0.1
+    },
+    {
+        chainId: "secret-4",
+        chainName: "Secret mainnet",
+        rpc: 'https://rpc.cosmos.directory/secretnetwork',
+        rest: 'https://rest.cosmos.directory/secretnetwork',
+        stakeCurrency: {
+            coinDenom: "SCRT",
+            coinMinimalDenom: "uscrt",
+            coinDecimals: 6,
+        },
+        bip44: {
+            coinType: 118,
+        },
+        bech32Config: {
+            bech32PrefixAccAddr: "scrt",
+            bech32PrefixAccPub: "scrtpub",
+            bech32PrefixValAddr: "scrtvaloper",
+            bech32PrefixValPub: "scrtvaloperpub",
+            bech32PrefixConsAddr: "scrtvalcons",
+            bech32PrefixConsPub: "scrtvalconspub"
+        },
+        currencies: [{
+            coinDenom: "SCRT",
+            coinMinimalDenom: "uscrt",
+            coinDecimals: 6,
+        }],
+        feeCurrencies: [{
+            coinDenom: "SCRT",
+            coinMinimalDenom: "uscrt",
+            coinDecimals: 6,
+        }],
+        gasPrice: "0.025uscrt",
+        gasPricePrefer: "0.05uscrt",
+        claim_min: 0.1
+    },
+    {
+        chainId: "evmos_9001-2",
+        chainName: "Evmos mainnet",
+        rpc: 'https://rpc.cosmos.directory/evmos',
+        rest: 'https://rest.cosmos.directory/evmos',
+        stakeCurrency: {
+            coinDenom: "Evmos",
+            coinMinimalDenom: "aevmos",
+            coinDecimals: 18,
+        },
+        bip44: {
+            coinType: 118,
+        },
+        bech32Config: {
+            bech32PrefixAccAddr: "evmos",
+            bech32PrefixAccPub: "evmospub",
+            bech32PrefixValAddr: "evmosvaloper",
+            bech32PrefixValPub: "evmosvaloperpub",
+            bech32PrefixConsAddr: "evmosvalcons",
+            bech32PrefixConsPub: "evmosvalconspub"
+        },
+        currencies: [{
+            coinDenom: "Evmos",
+            coinMinimalDenom: "aevmos",
+            coinDecimals: 18,
+        }],
+        feeCurrencies: [{
+            coinDenom: "Evmos",
+            coinMinimalDenom: "aevmos",
+            coinDecimals: 18,
+        }],
+        gasPrice: "0.025aevmos",
+        claim_min: 0.1
     }
 ]
