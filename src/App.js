@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Button } from 'antd';
 import ClaimRewards from './utils/claim/ClaimRewards';
+import DistributeAll from './utils/distribute/DistributeAll';
 // 引入样式
 import 'antd/dist/antd.css';
 
@@ -35,6 +36,7 @@ function claimAll() {
 // 将当前账户的所有资产发送到指定地址，先支持 atom, osmo, scrt, juno, evmos
 function distributeAll() {
   console.log("distributeAll");
+  new DistributeAll().distributeAll();
 }
 
 // 质押当前账户的所有资产，先支持 atom, osmo, scrt, juno, evmos
