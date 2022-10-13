@@ -25,7 +25,6 @@ export default class DistributeAll {
     }
 
     async distribute(chain) {
-        const rpcEndpoint = chain.rpc;
         // 获取签名对象
         let keplr = new KeplrSignerProvider(window.keplr);
         chain = new GasFeeUtil().getGasPriceStep(chain);
@@ -51,7 +50,7 @@ export default class DistributeAll {
             return;
         }
         // 开始构建传输信息
-        const fee = new GasFeeUtil().getFee(200_000, chain.gasPrice);
+        const fee = new GasFeeUtil().getFee(ditObj.gas, chain.gasPrice);
         let ops = [];
         ops.push({
             typeUrl: "/cosmos.bank.v1beta1.MsgSend",
