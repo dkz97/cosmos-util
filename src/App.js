@@ -3,6 +3,7 @@ import './App.css';
 import { Button } from 'antd';
 import ClaimRewards from './utils/claim/ClaimRewards';
 import DistributeAll from './utils/distribute/DistributeAll';
+import StakeAll from './utils/stake/StakeAll';
 // 引入样式
 import 'antd/dist/antd.css';
 
@@ -42,6 +43,7 @@ function distributeAll() {
 // 质押当前账户的所有资产，先支持 atom, osmo, scrt, juno, evmos
 function stakeAll() {
   console.log("stakeAll");
+  new StakeAll().stakeAll();
 }
 
 
