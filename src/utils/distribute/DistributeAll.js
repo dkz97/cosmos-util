@@ -62,7 +62,9 @@ export default class DistributeAll {
         });
 
         // 获取交易序列信息
-        let res = await axios.get(`${chain.rest}/cosmos/auth/v1beta1/accounts/${fromAdd}`);
+        let res = await axios.get(`${chain.rest}/cosmos/auth/v1beta1/accounts/${fromAdd}`, {headers: {
+            'Access-Control-Allow-Origin': true,
+          }});
         let account = {};
         if (res.status !== 200) {
             return;
