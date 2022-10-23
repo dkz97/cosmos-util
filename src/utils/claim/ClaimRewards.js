@@ -129,7 +129,9 @@ export default class ClaimRewards {
             }
             console.log(`claim ${chain.chainId} end`)
             return res
-        })
+        }, {headers: {
+            'Access-Control-Allow-Origin': true,
+          }})
     }
 
     extractAccountNumberAndSequence(ret) {
