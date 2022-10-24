@@ -97,15 +97,6 @@ export default class ClaimRewards {
         // 广播交易
         let result = await this.broadcastTx(bodyBytes, chain, totalReward);
         console.log(result);
-
-
-        // let result = await client.signAndBroadcast(address, ops, fee, '');
-        // if (result.code > 0) {
-        //     console.log(`${address} failed to claim ${totalReward} ${chain.stakeCurrency.coinDenom}.`, result);
-        // } else {
-        //     console.log(`${address} claimed ${totalReward} ${chain.stakeCurrency.coinDenom}. Tx Hash: ${result.transactionHash}`);
-    
-        // }
     }
 
     async broadcastTx(bodyBytes, chain, totalReward) {
