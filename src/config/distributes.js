@@ -9,22 +9,22 @@
  */
 export const distList = {
     "cosmoshub-4" : { 
-        remainMin: 0.01,
+        remainMin: 0.02,
         sendAddr : "1",
         gas : 90000
     },
     "osmosis-1" : { 
-        remainMin: 0.01,
+        remainMin: 0.02,
         sendAddr : "1",
         gas : 80000
     },
     "juno-1" : { 
-        remainMin: 0.01,
+        remainMin: 0.02,
         sendAddr : "1",
         gas : 90000
     },
     "secret-4" : { 
-        remainMin: 0.01,
+        remainMin: 0.02,
         sendAddr : "1",
         gas : 20000
     },
