@@ -7,7 +7,7 @@ import {
 import KeplrSignerProvider from "../signed/KeplrSignerProvider";
 import { chainsList } from "../../config/chains";
 import { toBase64 } from '@cosmjs/encoding';
-import { distList } from "../../config/distributes";
+import { distList } from "../../config/stake";
 import GasFeeUtil from "../GasFeeUtil";
 import { coin } from '@cosmjs/launchpad'
 import axios from "axios";
