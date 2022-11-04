@@ -95,8 +95,7 @@ export default class ClaimRewards {
         let bodyBytes = await client.sign(address, ops, fee, '', signerData);
 
         // 广播交易
-        let result = await this.broadcastTx(bodyBytes, chain, totalReward);
-        console.log(result);
+        this.broadcastTx(bodyBytes, chain, totalReward);
     }
 
     async broadcastTx(bodyBytes, chain, totalReward) {
