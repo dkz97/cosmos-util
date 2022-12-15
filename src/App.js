@@ -22,6 +22,9 @@ function App() {
         <Button className="buttonClass" type="primary" size='large' onClick={stakeAll}>
           一键质押
         </Button>
+        <Button className="buttonClass" type="primary" size='large' onClick={toAssetChart}>
+          资产收益图
+        </Button>
         </div>
       </header>
     </div>
@@ -44,6 +47,11 @@ function distributeAll() {
 function stakeAll() {
   console.log("stakeAll");
   new StakeAll().stakeAll();
+}
+
+// 跳转资产收益图页面
+function toAssetChart() {
+  console.log("toAssetChart");
 }
 
 
