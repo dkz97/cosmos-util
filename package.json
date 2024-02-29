@@ -1,7 +1,11 @@
 {
   "name": "cosmos-util",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkz97/cosmos-util.git"
+  },
+  "homepage": "https://github.com/dkz97/cosmos-util",
   "dependencies": {
     "@cosmjs/proto-signing": "^0.28.1",
     "@cosmjs/stargate": "^0.28.1",
